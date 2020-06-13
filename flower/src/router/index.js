@@ -8,8 +8,9 @@ import ShoppingCar from '@/components/pages/ShoppingCar'
 import Coupons from '@/components/pages/Coupons'
 import Address from '@/components/pages/Address'
 import PhonePerson from '@/components/pages/PhonePerson'
-
-
+import Order from '@/components/pages/Order'
+import RedRose from '@/components/pages/redRose'
+import GoodsDetails from '@/components/pages/GoodsDetails'
 
 Vue.use(Router)
 
@@ -58,5 +59,20 @@ export default new Router({
       name:'Address',
       component:Address
     },
+    {
+      path:'/order',
+      name:'Order',
+      component:Order
+    },
+    {
+      path:'/redRose',
+      name:'RedRose',
+      component:RedRose
+    },
+    {
+      path:'/goodsDetails',
+      name:'GoodsDetails',
+      component:GoodsDetails
+    }
   ]
 })
